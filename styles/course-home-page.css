@@ -285,6 +285,7 @@ footer p {
     nav ul {
         display: list-item;
         width: 100%;
+        justify-content: center;
     }
     nav a {
         font-size: 8px;
