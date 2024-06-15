@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development, Course Home Page">
+    <meta name="author" content="Collins C. Okolie">
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles/course-home-page.css">
+    <script src="scripts/course-home-page.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/IMG_6885.JPG" alt="Profile Picture">
+            <h1>Collins C. Okolie</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <nav>
+            <ul id="menu">
+                <li><a  href="#" class="active">Home</a></li>
+                <li><a  href="#">Chamber</a></li>
+                <li><a  href="#">GitHub Profile</a></li>
+                <li><a  href="https://www.linkedin.com/in/collins-okolie-5848a12aa">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>Lagos Nigeria</h2>
+            <img src="images/lekki-ikoyi-link-bridge.jpg" alt="Lekki Ikoyi Link Bridge">
+            <p>Lekki Ikoyi Link Bridge</p>
+        </section>
+        <section id="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="filter-buttons">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+            <hr>
+            <div id="courses-container"></div>
+          
+            <p>Total Credits: <span id="total-credits"></span></p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span><br>
+            Collins Chibuike Okolie<br>
+            Nigeria <img src="images/nigeria.png" alt="Nigerian Flag" class="flag">
+        </p>
+        <p id="lastModified">Last Update: </p>
+    </footer>
+</body>
+</html>
