@@ -9,8 +9,9 @@ body {
 header {
     font-family: "Texturina";
     color: white;
-    padding: 1rem;
     text-align: center;
+    background-color: #1E4966;
+    padding: 0; /* Remove padding */
 }
 
 header .profile {
@@ -19,6 +20,7 @@ header .profile {
     align-items: center;
     justify-content: center;
     background-color: #1E4966;
+    padding: 1rem;
 }
 
 header .profile img {
@@ -37,20 +39,20 @@ nav {
     display: flex;
     justify-content: center;
     background-color: black;
-    padding: 30px;
+    padding: 0; /* Remove padding */
 }
 
 nav ul {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 30px 0; /* Adjust padding to fit your design */
     justify-content: space-between;
     width: 60%;
 }
 
 nav li {
-    margin: 0 1rem;
+    margin: 0;
 }
 
 nav a {
@@ -69,8 +71,9 @@ nav a:hover {
 nav a.active {
     color: yellow;
 }
+
 #menu-toggle {
-    display: block;
+    display: none; /* Hide by default */
     background: none;
     border: none;
     cursor: pointer;
@@ -171,7 +174,7 @@ section:before {
 
 #filter-buttons {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -179,15 +182,15 @@ section:before {
 }
 
 #filter-buttons button {
-    margin: 0 0.5rem; 
-    padding: 0.75rem 1.3rem; 
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.3rem;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
     border-radius: 8px;
     transition: background-color 0.3s;
-    flex-grow: 1; 
+    flex-grow: 1;
     text-align: center;
 }
 
@@ -214,7 +217,7 @@ section:before {
     margin: 1rem;
     text-align: center;
     background-color: white;
-    width: 30%; 
+    width: 30%;
 }
 
 .course-card.completed {
@@ -231,7 +234,8 @@ footer {
     text-align: center;
     padding: 1rem;
 }
-footer br{
+
+footer br {
     display: none;
 }
 
@@ -247,50 +251,56 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    
+
     header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         background-color: #1E4966;
         padding: 0.5rem 1rem;
     }
-    .profile h1{
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
-       
-    }
 
-    header .profile {
+    .profile {
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
     }
 
     header .profile img {
         margin-bottom: 0;
         margin-right: 0.7rem;
-        height:90px;
+        height: 90px;
         width: 90px;
     }
+
+    #menu-toggle {
+        display: block; /* Show the hamburger menu */
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
     nav {
         display: none;
         flex-direction: column;
         align-items: center;
         background-color: black;
-        padding: 15px 0px;
+        padding: 15px 0;
+        width: 100%; /* Ensure nav takes full width */
     }
+
     nav ul {
         display: list-item;
         width: 100%;
         justify-content: center;
     }
+
     nav a {
         font-size: 8px;
         color: white;
     }
-    
+
     nav a:hover {
         background-color: #1E4966;
         color: white;
@@ -308,38 +318,41 @@ footer p {
         max-width: 100%;
         background-color: white;
     }
-    
-    #filter-buttons{
+
+    #filter-buttons {
         justify-content: center;
         width: 100%;
     }
-    
+
     section {
-        margin-bottom: 0; 
+        margin-bottom: 0;
         box-shadow: none;
     }
+
     section h2 {
         font-size: 15px;
     }
-    
+
     .course-card {
-        width: 90%; 
+        width: 90%;
         padding: 2px;
     }
+
     .course-row {
-        display: block;   
+        display: block;
     }
+
     .flag {
         height: 30px;
         width: 30px;
         margin-bottom: -10px;
     }
+
     footer p {
         font-size: 15px;
     }
+
     footer br {
         display: block;
     }
 }
-
-
