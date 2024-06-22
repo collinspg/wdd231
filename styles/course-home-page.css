@@ -220,7 +220,8 @@ section:before {
 }
 
 .course-card.completed {
-    background-color: #A52A2A;
+    background-color: #4CAF50 ;
+    /* color:white; */
 }
 
 .course-card.not-completed {
