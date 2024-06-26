@@ -143,7 +143,7 @@ ul.menuLinks li a {
 }
 
 li.current-menu-item a {
-    background-color: #FFFFFF;
+    background-color: #54595F; 
     color: #4EC827;
     border-radius: 5px;
 }
