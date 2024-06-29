@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Collins Chibuike Okolie">
+    <meta name="description" content="WDD 231 - Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce, Collins Chibuike Okolie">
+    <meta property="og:url" content="https://lagoschamber.com/">
+    <meta property="og:image" content="https://www.pexels.com/photo/the-national-theatre-nigeria-22674728/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/advert.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <title>Home- Lagos Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <img src="images/lagos-city.png" id="cityLogo" alt="Lagos City Logo">
+        <h1>Lagos</h1>
+        <p>Chamber of Commerce</p>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+                <img src="images/lagos-hero.jpeg" alt="city">
+                <button class="hero-button">Sign Up</button>
+        </div>        
+        <div>
+            <h2>Home</h2>
+        </div>
+        <div class="container">    
+            <div class="events-card">
+            <h3>Events</h3>
+            <p class="placeholder"></p>
+            </div>
+            <div class="current-weather-card">
+            <h3>Current Weather</h3>
+            <div><img id="weather-icon" alt="current-weather-icon"></div>
+            <p><span id="current-temp"></span></p>
+            <figcaption></figcaption>
+            <p>Feels Like: <span id="feels-like"></span></p>
+            <p>High: <span id="temp-high"></span></p>
+            <p>Low: <span id="temp-low"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            </div>
+            <div class="weather-forecast-card">
+            <h3>Weather Forecast</h3>
+            <p>Today: <span id="today-temp"></span></p>
+            <p>Friday: <span id="tomorrow-temp"></span></p>
+            <p>Saturday: <span id="next-day-temp"></span></p>
+            </div>
+        </div>
+        <div id="advertisements"></div>
+    </main>
+<footer>
+    <footer>
+        <div id="left-footer">
+            <p>
+                Lagos Chamber of Commerce<br>
+                1, Idowu Taylor Street<br>
+                Victoria Island, Lagos<br>
+                info@lagoschamber.com<br>
+                +234 1 234 5678
+            </p>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.youtube.com">
+                <img class="youtube" src="images/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://www.x.com">
+                <img class="twitter" src="images/x.svg" alt="X">
+            </a>
+            <a href="https://www.indeed.com">
+                <img class="indeed" src="images/indeed.svg" alt="Indeed">
+            </a>
+        </div>
+        <div id="right-footer">
+            WDD 231 Chamber Project<br>
+            Collins C. Okolie<br>
+            &copy; <span id="currentyear"></span> Lagos Chamber of Commerce<br>
+            <span id="lastmodified"></span>
+        </div>
+    </footer>
+</body>
+</html>
