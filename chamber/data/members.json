@@ -2,82 +2,99 @@
     "members": [
         {
             "name": "BioNet Technologies",
+            "tagLine": "Communicate with Technologies",
             "address": "123 Innovation Avenue, Victoria Island",
             "phoneNumber": "+234-701-234-5678",
             "websiteUrl": "https://techsolutionsvi.example.com",
             "imageFileName": "images/bionet-tech.png",
+            "email": "bionet@techemail.com",
             "membershipLevel": "3",
             "otherInfo": "Leading provider of IT consulting and solutions in Victoria Island."
         },
         {
             "name": "Green Haven Spa",
+            "tagLine": "Life made easy",
             "address": "456 Serenity Street, Victoria Island",
             "phoneNumber": "+234-702-345-6789",
             "websiteUrl": "https://greenhavenspa.example.com",
             "imageFileName": "images/green-haven.png",
+            "email": "green@havenemail.com",
             "membershipLevel": "2",
             "otherInfo": "Luxury spa offering rejuvenating treatments and wellness services."
         },
         {
             "name": "Gourmet Delights Catering",
+            "tagLine": "Culinary Excellence Delivered",
             "address": "789 Culinary Road, Victoria Island",
             "phoneNumber": "+234-703-456-7890",
             "websiteUrl": "https://gourmetdelights.example.com",
             "imageFileName": "images/catering.png",
+            "email": "gourmet@delightemail.com",
             "membershipLevel": "1",
             "otherInfo": "Provider of exquisite catering services for events and gatherings."
         },
         {
             "name": "Fashion Hub Boutique",
+            "tagLine": "Fashion made easy",
             "address": "246 Style Boulevard, Victoria Island",
             "phoneNumber": "+234-704-567-8901",
             "websiteUrl": "https://fashionhub.example.com",
+            "email": "hub@fashionemail.com",
             "imageFileName": "images/fashion.png",
             "membershipLevel": "2",
             "otherInfo": "Trendsetting fashion boutique offering curated collections."
         },
         {
             "name": "Healthcare Plus Clinic",
+            "tagLine": "Your Health, Our Priority",
             "address": "567 Wellness Centre, Victoria Island",
             "phoneNumber": "+234-705-678-9012",
             "websiteUrl": "https://healthcareplus.example.com",
             "imageFileName": "images/health-clinic.png",
+            "email": "health@plusemail.com",
             "membershipLevel": "3",
             "otherInfo": "Comprehensive healthcare services including specialist consultations."
         },
         {
             "name": "Ocean Breeze Shipping",
+            "tagLine": "Explore the Blue: Your Gateway to Oceanic Adventures",
             "address": "890 Cargo Avenue, Victoria Island",
             "phoneNumber": "+234-706-789-0123",
             "websiteUrl": "https://oceanbreeze.example.com",
             "imageFileName": "images/ocean-shipping.png",
+            "email": "ocean@breezeemail.com",
             "membershipLevel": "1",
             "otherInfo": "Efficient shipping and logistics solutions for local and international clients."
         },
         {
             "name": "Artisanal Design Studio",
+            "tagLine": "Creative is what we do.",
             "address": "234 Artisan Lane, Victoria Island",
             "phoneNumber": "+234-707-890-1234",
             "websiteUrl": "https://artisanaldesign.example.com",
+            "email": "art@designemail.com",
             "imageFileName": "images/furniture.png",
             "membershipLevel": "2",
             "otherInfo": "Handcrafted design studio specializing in bespoke furniture and decor."
         },
         {
             "name": "SmartHome Innovations",
+            "tagLine": "Smart home for smart people.",
             "address": "357 Automation Drive, Victoria Island",
             "phoneNumber": "+234-708-901-2345",
             "websiteUrl": "https://smarthomevi.example.com",
+            "email": "home@smartemail.com",
             "imageFileName": "images/smart-tech.png",
             "membershipLevel": "1",
             "otherInfo": "Provider of advanced smart home technologies and automation solutions."
         },
         {
             "name": "Adventura Travel Agency",
-            "address": "123 Adventure Avenue, Victoria Island",
+            "tagLine": "Discover Your World: Tailored Journeys, Unforgettable Experiences",
             "phoneNumber": "+234-709-012-3456",
             "websiteUrl": "https://adventuratravel.example.com",
             "imageFileName": "images/travel.png",
+            "email": "adventura@travelemail.com",
             "membershipLevel": "2",
             "otherInfo": "Specializes in luxury travel experiences and bespoke holiday planning."
         }
