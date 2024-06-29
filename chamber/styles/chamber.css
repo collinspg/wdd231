@@ -5,6 +5,12 @@
     --textColor: #CCCCCC;
 }
 
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 #cityLogo {
     float: left;
     width: 100px;
@@ -76,9 +82,22 @@
 header, footer {
     background-color: var(--backgroundColor);
     color: var(--primaryColor);
-    padding: 1rem;
+}
+header{
+    padding: 0.1rem 1rem; 
+    
 }
 
+header p{
+    margin-left: 130px;
+   
+}
+header h1{
+    margin-left: 180px;
+}
+header img{
+    margin-top: 30px;
+}
 footer {
    text-align: center;
    display: flex;
@@ -115,6 +134,8 @@ body {
 /* NAVIGATION ITEMS */
 nav {
     background-color: var(--backgroundColor);
+
+    
 }
 
 #menuButton::before {
@@ -210,6 +231,7 @@ nav.open {
     border-radius: 5px;
 }
 
+
 @media screen and (max-width: 767px){
    footer {
     display: flex;
@@ -272,3 +294,4 @@ footer {
     gap: 15px;
     align-items: center;
 }
+
