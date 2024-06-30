@@ -1,0 +1,26 @@
+.toggle-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+    border: 1px solid #333;
+}
+
+body.dark-mode {
+    background-color: var(--lightBackgroundColor);
+    color: var(--lightTextColor);
+}
+
+body.dark-mode h3, body.dark-mode h6 {
+    background-color: var(--lightHeadingBgColor);
+    color: var(--lightHeadingTextColor);
+}
+
+body.light-mode {
+    color: #000; 
+}
+
+/* For dark mode */
+body.dark-mode {
+    color: #fff; 
+}

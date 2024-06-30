@@ -3,12 +3,23 @@
     --secondaryColor: #54595F;
     --backgroundColor: #1A1A1A;
     --textColor: #CCCCCC;
+    --headingBgColor: #2C2C2C;
+    --headingTextColor: #FFFFFF;
+    --lightBackgroundColor: #FFFFFF;
+    --lightTextColor: #000000;
+    --lightHeadingBgColor: #F5F5F5;
+    --lightHeadingTextColor: #333333;
 }
 
 html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
 }
 
 #cityLogo {
