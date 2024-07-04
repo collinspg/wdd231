@@ -3,12 +3,7 @@
     --secondaryColor: #3A3A3A; 
     --backgroundColor: #1A1A1A; 
     --textColor: #FFFFFF;
-    /* --headingBgColor: #2C2C2C; */
-    /* --headingTextColor: #FFFFFF;
-    --lightBackgroundColor: #FFFFFF;
-    --lightTextColor: #000000;
-    --lightHeadingBgColor: #F5F5F5;
-    --lightHeadingTextColor: #333333; */
+  
 }
 
 html, body {
@@ -16,12 +11,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-/* body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondaryColor);
-    color: var(--textColor);
-} */
-
 header, footer {
     background-color: var(--backgroundColor);
     color: var(--primaryColor);
@@ -41,13 +30,6 @@ header h1{
 header img{
     margin-top: 30px;
 }
-
-/* body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--backgroundColor);
-    color: var(--textColor);
-   
-} */
 
 
 /* NAVIGATION ITEMS */
@@ -197,8 +179,15 @@ body {
 }
 
 h2 {
+    /* text-align: center; */
+    width:94%;
     text-align: left;
-    margin: 2rem 0 1rem 3rem;
+    margin: 2rem auto 1rem;
+    background-color: #1A1A1A;
+    color: #4EC827;
+    padding:25px;
+    border-radius: 10px;
+  
 }
 
 .container {
@@ -240,24 +229,34 @@ h2 {
     font-weight: 600;
     font-size: 2em;
 }
-h3, h6 {
-    background-color: var(--headingBgColor); 
-    color: var(--headingTextColor);
-}
-h3 {
+h3{
+    background-color: var(--backgroundColor); 
+    color: var(--primaryColor);
     padding: 20px;
     text-align: center;
-    font-size: 22px;
-    margin: 0;
+    border-bottom: none;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    margin: 0;
+}
+h3{
+    font-size: 22px;
 }
 
-h6 {
+.member-card h3, h6{
+    background-color: var(--backgroundColor); 
+    color: var(--primaryColor);
+    padding: 10px;
+    text-align: center;
     margin: 0;
+}
+
+
+h6 {
+    margin-top: 0;
     text-align: center;
     font-size: 14px;
-    padding-bottom: 1em;
+    padding-bottom: 10px;
 }
 
 figcaption {
@@ -339,6 +338,12 @@ figcaption {
 
     #advertisements {
         grid-template-columns: 1fr;
+    }
+
+    h2 {
+        
+        width:79%;
+        justify-self: center;
     }
 
     footer {
