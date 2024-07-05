@@ -348,5 +348,72 @@ footer p {
         display: block;
     }
 }
+/* Define keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+/* Define keyframes for swell animation */
+@keyframes swell {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
+/* Apply fadeInUp animation to each course card */
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.2s; /* Adjust delay for each card */
+    transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+/* Apply swell animation on hover and when visible */
+.course-card:hover,
+.course-card.visible {
+    animation: swell 0.3s ease forwards;
+    transform: scale(1.05);
+    z-index: 1; /* Ensures hovered/visible card is on top */
+    opacity: 1; /* Ensure the card is fully visible */
+}
+
+/* Adjust animation delays for each card */
+.course-card:nth-child(2) {
+    animation-delay: 0.4s; /* Delay for the second card */
+}
+
+.course-card:nth-child(3) {
+    animation-delay: 0.6s; /* Delay for the third card */
+}
+
+.course-card:nth-child(4) {
+    animation-delay: 0.8s; /* Delay for the fourth card */
+}
+
+.course-card:nth-child(5) {
+    animation-delay: 1s; /* Delay for the fifth card */
+}
+
+.course-card:nth-child(6) {
+    animation-delay: 1.2s; /* Delay for the sixth card */
+}
