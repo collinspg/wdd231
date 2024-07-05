@@ -3,12 +3,6 @@
     --secondaryColor: #54595F;
     --backgroundColor: #1A1A1A;
     --textColor: #CCCCCC;
-    --headingBgColor: #2C2C2C;
-    --headingTextColor: #FFFFFF;
-    --lightBackgroundColor: #FFFFFF;
-    --lightTextColor: #000000;
-    --lightHeadingBgColor: #F5F5F5;
-    --lightHeadingTextColor: #333333;
 }
 
 html, body {
@@ -175,10 +169,10 @@ ul.menuLinks li a {
 }
 
 li.current-menu-item a {
-    background-color: #54595F; 
-    color: #4EC827;
+    background-color: #010101; 
     border-radius: 5px;
 }
+
 
 ul.menuLinks {
     list-style-type: none; 
