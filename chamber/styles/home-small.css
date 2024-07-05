@@ -33,10 +33,6 @@ header img{
 
 
 /* NAVIGATION ITEMS */
-nav {
-    background-color: var(--backgroundColor);
-}
-
 #menuButton::before {
     content: "\2630";
 }
@@ -63,7 +59,7 @@ ul.menuLinks li a {
 }
 
 li.current-menu-item a {
-    background-color: #54595F;
+    background-color: #010101;
     border-radius: 5px;
 }
 
@@ -128,7 +124,7 @@ nav.open {
     transform: translate(-50%, -50%);
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     background-color: var(--primaryColor);
     border: none;
     border-radius: 5px;
@@ -174,7 +170,7 @@ footer {
 /* Body and Main CSS */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondaryColor);
+    background-color: #010101;
     color: var(--textColor);
 }
 
