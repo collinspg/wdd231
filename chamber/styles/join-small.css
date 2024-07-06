@@ -15,6 +15,60 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* join-small.css */
+
+.thanks{
+ background-color: #575757;
+ margin:0;
+ padding:10px;
+ font-family: 'Montserrat', sans-serif;
+
+}
+.thank-you, .details, .contact, .thanks ul{
+    color: white;
+}
+.thank-you, .contact{
+    text-align: center;
+}
+.details{
+    font-size: 22px;
+}
+.contact{
+    margin-top: 210px;
+    font-size: 22px;
+}
+.thanks ul{
+    padding:49px;
+    font-size: 16px;
+}
+.confirmation {
+    /* Styles specific to the confirmation section */
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.confirmation p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.confirmation strong {
+    font-weight: bold;
+    color: #444;
+}
+
+/* End of Thank you page */
+
 header, footer {
     background-color: var(--backgroundColor);
     color: var(--primaryColor);
@@ -133,7 +187,7 @@ nav.open {
 }
 
 /*******************MEMBERSHIP SECTION*****************/
-.join_main {
+.join-main {
     display: block;
 }
 
@@ -240,13 +294,13 @@ form label.top input:required:valid {
     box-shadow: 3px 3px 10px rgb(54 54 54);
 }
 
-.member_title {
+.member-title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.member_title h2 {
+.member-title h2 {
     font-size: 50px;
     color: #54595F;
     text-shadow: 0 1px 3px #32292f;
@@ -301,6 +355,84 @@ footer {
     justify-content: space-evenly;
     gap: 15px;
     margin: 1rem 0;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Membership Benefits List */
+#membershipBenefits {
+    margin-top: 10px;
+    padding: 0;
+}
+
+#membershipBenefits li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Trigger Link */
+#membershipLink {
+    display: block;
+    margin-top: 20px;
+    padding:10px;
+    color: yellow; 
+    font-size: 20px;
+}
+
+#membershipLink:hover {
+    text-decoration: underline;
+}
+
+.memberships table td {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.memberships table td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.memberships table td {
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {

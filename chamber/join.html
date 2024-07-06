@@ -7,8 +7,8 @@
     <meta name="description" content="This will be the form to join to the chamber to differents memberships">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WDD 231 - Chamber of Commerce, Collins Chibuike Okolie">
-    <meta property="og:url" content="https://lagoschamber.com/">
-    <meta property="og:image" content="https://www.lagoschamber.com/">
+    <meta property="og:url" content="https://collinspg.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://github.com/collinspg/wdd231/blob/main/chamber/images/lagos-city.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
@@ -37,8 +37,8 @@
         </nav>
     </header>
     <main>
-        <div class="join_main">
-            <form method="get" action="../thankyou_page/thanks.html">
+        <div class="join-main">
+            <form method="get" action="thankyou.html" >
               <fieldset>
                 <legend>Applicant Information</legend>
                 <label class="top">First Name*<input type="text" name="fname" required></label>
@@ -46,7 +46,6 @@
                 <label class="top">Phone<input type="tel" name="phone" placeholder="1234446789"></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
-      
               </fieldset>
       
               <fieldset>
@@ -56,11 +55,10 @@
                 <label class="top">Business Description<textarea name="description"
                     placeholder="Tell me about your business"></textarea></label>
       
-                <input type="hidden" id="dateHidden" name="dateHidden" value="date">
-                <input type="hidden" id="timeHidden" name="timeHidden" value="time">
-      
-      
-      
+                    <input type="hidden" id="dateHidden" name="dateHidden">
+                    <input type="hidden" id="timeHidden" name="timeHidden">
+
+                    
               </fieldset>
       
       
@@ -72,31 +70,31 @@
                 <label class="sbs"><input type="radio" name="membership">Gold Membership</label>
               </fieldset>
       
-              <input type="submit" value="Join The Chamber" class="submitBtn">
+              <input type="submit" value="Join The Chamber" class="submitBtn" onclick="setDateTime()">
       
             </form>
       
             <section class="memberships">
-              <div class="member_title">
+              <div class="member-title">
                 <h2>Memberships</h2>
               </div>
               <table>
                 <tbody>
                   <tr>
-                    <td><img class="no_profitable" src="images/non-profit.png" alt="bronze medal" width="180" height="180" />
+                    <td><img class="no-profitable" src="images/non-profit.png" alt="bronze medal" width="180" height="180" />
                     </td>
                     <td><strong>NON PROFITABLE</strong><br />
                       This membership is only for non profit organizations, they not need to pay for a membership.</td>
                   </tr>
                   <tr>
-                    <td><strong><img class="bronze_memebership" src="images/bronze.png" alt="" width="180" height="180" />
+                    <td><strong><img class="bronze-memebership" src="images/bronze.png" alt="" width="180" height="180" />
                       </strong></td>
                     <td><strong>BRONZE</strong><br />
                       This memebership is perfect to small business. join to Bronze membership only width
                       $150 and be visible in chamber website, discount in events and access to our work spaces.</td>
                   </tr>
                   <tr>
-                    <td><strong><img class="silver_membership" src="images/silver.png" alt="" width="180" height="180" />
+                    <td><strong><img class="silver-membership" src="images/silver.png" alt="" width="180" height="180" />
                       </strong></td>
                     <td><strong>SILVER</strong><br />
                       Increase your connections and accelerate your growth. Silver membership has a fee of $230, you can have
@@ -105,7 +103,7 @@
                   </tr>
                 
                   <tr>
-                    <td><strong><img class="gold_membership" src="images/gold.png" alt="" width="180" height="180" />
+                    <td><strong><img class="gold-membership" src="images/gold.png" alt="" width="180" height="180" />
                       </strong></td>
                     <td><strong>GOLD</strong><br />
                       Get the better investor and demonstrate your leadership. Gold membership has a fee of $340, you can get
@@ -116,12 +114,21 @@
               </table>
       
             </section>
-      
-      
-      
-      
-      
           </div>
+          <!-- HTML for Modal -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Membership Benefits</h2>
+                <ul id="membershipBenefits">
+                    <!-- JavaScript will populate this list -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Trigger link for Modal -->
+        <a href="#" id="membershipLink">View Membership Benefits</a>
+        
     </main>
     <footer>
         <div id="left-footer">

@@ -20,7 +20,9 @@
         transition: .5s;
         border-radius: 5px;
     }
-
+    #membershipLink {
+        color: white;
+    }
     footer {
         display: flex;
         justify-content: center;

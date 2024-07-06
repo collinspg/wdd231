@@ -1,11 +1,13 @@
 /* Medium view */
 @media only screen and (min-width: 768px) {
-    .join_main {
+    .join-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
+    #membershipLink {
+        color:  blueviolet; 
+    }
     main {
-        background-color:#54595F;
+        background-color: #54595F;
     }
 }

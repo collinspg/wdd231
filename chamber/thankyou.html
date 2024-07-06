@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Collins Chibuike Okolie">
+    <meta name="description" content="This will be the form to join to the chamber to differents memberships">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce, Collins Chibuike Okolie">
+    <meta property="og:url" content="https://collinspg.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://github.com/collinspg/wdd231/blob/main/chamber/images/lagos-city.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-medium.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js" defer></script>
+    <title>Thank You Page- Lagos Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <img src="images/lagos-city.png" id="cityLogo" alt="Lagos City Logo">
+        <h1>Lagos</h1>
+        <p>Chamber of Commerce</p>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li class="current-menu-item"><a href="join.html" title="Join">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+<main class="thanks">
+    <section class="thank-you-section">
+        <h2 class="thank-you">Thank You for Joining the Lagos Chamber of Commerce</h2>
+        <p class="details">We have received your application. Here are the details:</p>
+        <ul>
+            <li><strong>First Name:</strong> <span id="firstName"></span></li>
+            <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+            <li><strong>Phone:</strong> <span id="phone"></span></li>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Business Name:</strong> <span id="businessName"></span></li>
+            <li><strong>Submission Date:</strong> <span id="submissionDate"></span></li>
+            <li><strong>Current Time:</strong> <span id="currentTime"></span></li>
+        </ul>
+        <p class="contact">We will contact you soon.</p>
+    </section>
+
+
+</main>
+<footer>
+    <div id="left-footer">
+        <p>
+            Lagos Chamber of Commerce<br>
+            1, Idowu Taylor Street<br>
+            Victoria Island, Lagos<br>
+            info@lagoschamber.com<br>
+            +234 1 234 5678
+        </p>
+    </div>
+    <div class="footer-icons">
+        <a href="https://www.youtube.com">
+            <img class="youtube" src="images/youtube.svg" alt="YouTube">
+        </a>
+        <a href="https://www.x.com">
+            <img class="twitter" src="images/x.svg" alt="X">
+        </a>
+        <a href="https://www.indeed.com">
+            <img class="indeed" src="images/indeed.svg" alt="Indeed">
+        </a>
+    </div>
+    <div id="right-footer">
+        WDD 231 Chamber Project<br>
+        Collins C. Okolie<br>
+        &copy; <span id="currentyear"></span> Lagos Chamber of Commerce<br>
+        <span id="lastmodified"></span>
+    </div>
+</footer>
+</body>
+</html>
+
