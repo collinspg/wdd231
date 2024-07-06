@@ -15,7 +15,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* join-small.css */
+/* Thank you page*/
 
 .thanks{
  background-color: #575757;
@@ -34,7 +34,6 @@ body {
     font-size: 22px;
 }
 .contact{
-    margin-top: 150px;
     font-size: 22px;
 }
 .thanks ul{
@@ -68,6 +67,8 @@ body {
 }
 
 /* End of Thank you page */
+
+/* join-small.css */
 
 header, footer {
     background-color: var(--backgroundColor);
