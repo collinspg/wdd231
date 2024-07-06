@@ -1,0 +1,11 @@
+/* Medium view */
+@media only screen and (min-width: 768px) {
+    .join_main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        background-color:#54595F;
+    }
+}

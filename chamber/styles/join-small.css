@@ -1,0 +1,312 @@
+/* Small (mobile) view */
+:root {
+    --primaryColor: #4EC827; 
+    --secondaryColor: #3A3A3A; 
+    --backgroundColor: #1A1A1A; 
+    --textColor: #FFFFFF;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+}
+
+header {
+    padding: 0.1rem 1rem; 
+}
+
+header p {
+    margin-left: 130px;
+}
+
+header h1 {
+    margin-left: 180px;
+}
+
+header img {
+    margin-top: 30px;
+}
+
+nav {
+    background-color: var(--backgroundColor);
+}
+
+#menuButton::before {
+    content: "\2630";
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--textColor);
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: .9rem;
+    right: 4vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: #010101;
+    border-radius: 5px;
+}
+
+ul.menuLinks {
+    list-style-type: none; 
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#viewToggle {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#cityLogo {
+    float: left;
+    width: 100px;
+    padding: 0 2rem 1rem 1rem;
+}
+
+.join {
+    display: none;
+}
+
+.join p {
+    color: #000000;
+}
+
+.join .btn_join {
+    margin: 0 auto;
+    background-color: #f7c72b;
+    border: 1px solid #32292f;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgb(54 54 54);
+    border-radius: 5px 5px 5px 5px;
+    width: 70%;
+}
+
+.btn_join a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.news {
+    display: block;
+}
+
+/*******************MEMBERSHIP SECTION*****************/
+.join_main {
+    display: block;
+}
+
+form {
+    grid-column: 1/2;
+}
+
+.memberships {
+    grid-column: 2/3;
+}
+
+/*--------------FORM---------------*/
+form fieldset {
+    margin: 2rem 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px rgb(80, 78, 78)
+}
+
+form legend {
+    color: rgb(252, 252, 252);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    background-color: #0E53A2;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #E7BF0A;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 35rem;
+    font-size: 20px;
+}
+
+input.submitBtn:hover {
+    background-color: #f0d781;
+    cursor: pointer;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: #32292f;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/***************** Memberships Section *****************/
+.memberships {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    height: 100%;
+    gap: 10px;
+    border: 1px solid #32292f;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px rgb(54 54 54);
+}
+
+.member_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member_title h2 {
+    font-size: 50px;
+    color: #54595F;
+    text-shadow: 0 1px 3px #32292f;
+}
+
+.copy {
+    margin: 0 10px;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+.pop {
+    display: none;
+    padding: .5em;
+    grid-column: 1/4;
+    color: #020202;
+    text-align: center;
+    background-color: #b1b0ad;
+}
+
+.close {
+    width: 2em;
+    background-color: white;
+    color: red;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}
+ 
+.youtube {
+    filter: invert(23%) sepia(94%) saturate(7494%) hue-rotate(356deg) brightness(96%) contrast(119%);
+}
+ 
+.twitter {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+}
+ 
+.indeed {
+    filter: invert(30%) sepia(93%) saturate(6053%) hue-rotate(196deg) brightness(93%) contrast(109%);
+}
+ 
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    #menuButton {
+        display: flex;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
