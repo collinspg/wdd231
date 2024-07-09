@@ -11,3 +11,19 @@
         background-color: #54595F;
     }
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#left-footer, #right-footer {
+    flex: 1;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
