@@ -470,57 +470,110 @@ h3{
 
 /* Small Viewports */
 @media screen and (max-width: 768px) {
-
     h2 {
         text-align: center;
     }
 
-    .discover-main, .sidebar-left, .right-side img, .calendar {
-        width: calc(100% - 2rem); 
-        margin: 0 auto;
-        box-sizing: border-box;
+    .discover-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 1rem;
-        text-align: center; /* Center the text inside */
-    }
-
-    .right-side img {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .calendar {
-        width: 100%;
+        box-sizing: border-box;
     }
 
     .sidebar-left {
         width: 100%;
+        max-width: 600px; /* Adjust max-width as necessary */
+        padding: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
     }
 
-    .discover-main {
+    .right-side img {
         width: 100%;
-        padding: 0 1rem; /* Add padding to ensure no content touches the viewport edges */
+        max-width: 100%; /* Ensure image is responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 1rem;
     }
 
-    .right-side {
-        grid-template-columns: 1fr;
+    /* Calendar */
+    .calendar {
+        width: 100%;
+        max-width: 600px; /* Adjust max-width as necessary */
+        padding: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 8px;
+        background-color: var(--secondaryColor); /* Adjust background color */
+        border-radius: 10px;
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
     }
+
+    .calendar-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: var(--textColor);
+        padding: 10px;
+    }
+
+    .calendar-week-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .calendar-week-days div {
+        display: grid;
+        place-items: center;
+        color: var(--textColor);
+        height: 2px; /* Adjust height for week days */
+    }
+
+    .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2px;
+        color: var(--textColor);
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .calendar-days div {
+        width: calc(100% / 7 - 4px); /* Adjust width to fit within the grid */
+        max-width: none; /* Ensure it doesn't overflow */
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px; /* Decrease padding for current date */
+        position: relative;
+        animation: to-top 1s forwards;
+    }
+
+    .calendar-days div.current-date {
+        padding: 12px; /* Adjust padding for current date */
+        font-size: 0.9rem; 
+    }
+
+
 
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        gap: 1rem; /* Add space between items */
-        padding: 1rem;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .footer-icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Center items horizontally */
-        gap: 1rem; /* Add space between items */
-        width: 100%;
+       }
+       .footer-icons {
+        justify-content: center;
+  
     }
 }
