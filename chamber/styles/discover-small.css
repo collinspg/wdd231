@@ -253,7 +253,6 @@ h3{
   #month-picker:hover {
     cursor: pointer;
     transform: scale(1.2);
-    transition: all 0.2 ease-in-out;
   }
   
   .year-picker {
@@ -270,11 +269,11 @@ h3{
     align-content: center;
     margin: 0px 10px;
     cursor: pointer;
+    background-color: #FFFFFF;
   }
   
   .year-change:hover {
     background-color: #39205a;
-    transition: all .2s ease-in-out;
     transform: scale(1.12);
   }
   
@@ -348,7 +347,6 @@ h3{
   
   .month-list.hide {
     animation: to-right 1s forwards;
-    visibility: none;
     pointer-events: none;
   }
   
