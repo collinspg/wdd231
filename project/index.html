@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Collins Chibuike Okolie">
-    <meta name="description" content="This page promotes the area through demographic content, statistics, and area imagery for the Lagos Chamber of Commerce.">
+    <meta name="description" content="LynnTech Poultry Farm Nigeria Limited specializes in providing high-quality poultry products and services. Located in Lagos, Nigeria, we focus on automatic equipment, customization, and breeding guidance.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WDD 231 - Chamber of Commerce, Collins Chibuike Okolie">
+    <meta property="og:title" content="LynnTech Poultry Farm - Quality Poultry Products in Lagos, Nigeria">
+    <meta property="og:description" content="Discover high-quality poultry products and services from LynnTech Poultry Farm Nigeria Limited, located in Ojoja Local Government Area, Lagos, Nigeria.">
     <meta property="og:url" content="https://collinspg.github.io/wdd231/project/index.html">
-    <meta property="og:image" content="https://github.com/collinspg/wdd231/blob/main/chamber/images/lagos-city.png">
+    <meta property="og:image" content="https://github.com/collinspg/wdd231/blob/main/chamber/images/lynntech-hero.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/home-small.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/home.js" defer></script>
-    <title>Home - LynnTech Poultry Farm</title>
+    <title>LynnTech Poultry Farm - Quality Poultry Products in Lagos, Nigeria</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/lynntech-logo.avif" alt="LynnTech Logo">
-            <h1>LynnTech</h1>
-            <p>Poultry Farm</p>
-        </div>
+        <img src="images/lynntech-logo.png" id="cityLogo" alt="LynnTech Logo">
+        <h1>LynnTech</h1>
+        <p>Poultry Farm</p>
         <nav id="animateme">
             <button id="menuButton"></button>
             <ul class="menuLinks">
                 <li><a href="index.html" id="home-link">Home</a></li>
-                <li><a href="products.html" id="products-link">Products & Services</a></li>
+                <li><a href="product-services.html" id="products-link">Products & Services</a></li>
                 <li><a href="contact.html" id="contact-link">Contact Us</a></li>
             </ul>
         </nav>
@@ -38,7 +36,7 @@
     <main>
         <section class="hero">
             <img src="images/lynntech-hero.jpg" alt="Hero Image">
-            <button class="cta">View Products</button>
+            <a class="cta" href="product-services.html#fullProducts">View Products</a>
         </section>
         <section class="introduction">
             <h2>Welcome to LynnTech Poultry Farm Nigeria Limited</h2>
@@ -57,7 +55,7 @@
                     <p>Modern Broiler Chicken Cage</p>
                 </div>
                 <div class="equipment-item">
-                    <img src="images/pullet-cage.jpg" alt="Pullet Chicken Cage">
+                    <img src="images/pullet-cage.jpg" alt="Pullet & Breeder Chicken Cage">
                     <p>Pullet & Breeder Chicken Cage</p>
                 </div>
                 <div class="equipment-item">
@@ -75,12 +73,12 @@
                     <p>Model Number: 9CLR- 4440 Raising</p>
                     <p>Quantity: 51,336 Chickens Per House</p>
                 </div>
-                <img class="benin" src="images/birds-layer-farm1.jpg" alt="Picture of bird broiler cage">
+                <img class="benin" src="images/birds-layer-farm1.jpg" alt="Bird Broiler Cage">
             </div>
         </section>
         <section>
             <div class="area-2 card">
-                <img class="rangpur" src="images/birds-layer-farm.jpg" alt="Picture of people behind bird broiler cage">
+                <img class="rangpur" src="images/birds-layer-farm.jpg" alt="People Behind Bird Broiler Cage">
                 <div class="text">
                     <h2>50,000 Birds Layer Farm Project</h2>
                     <p>Site: Rangpur, Bangladesh</p>
@@ -99,7 +97,7 @@
                     <p>Model Number: 9CLR- 4440 Raising</p>
                     <p>Quantity: 17,664 Chickens Per House</p>
                 </div>
-                <img class="bamako" src="images/birds-layer-farm3.jpg" alt="Picture of bird broiler cage">
+                <img class="bamako" src="images/birds-layer-farm3.jpg" alt="Bird Broiler Cage">
             </div>
         </section>
     </main>
@@ -108,22 +106,25 @@
             <div class="products">
                 <h3>Products</h3>
                 <ul>
-                    <li><a href="#">Layer Chicken Cage</a></li>
-                    <li><a href="#">Modern Chicken Cage</a></li>
-                    <li><a href="#">Automatic Chicken Cage</a></li>
-                    <li><a href="#">Shed Chicken Cage</a></li>
+                    <li><a href="product-services.html#layer-chicken-cage">Layer Chicken Cage</a></li>
+                    <li><a href="product-services.html#modern-chicken-cage">Modern Chicken Cage</a></li>
+                    <li><a href="product-services.html#automatic-chicken-cage">Automatic Chicken Cage</a></li>
+                    <li><a href="product-services.html#shed-chicken-cage">Shed Chicken Cage</a></li>
                 </ul>
-            </div>
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>LynnTech Poultry Farm Nigeria Ltd.</p>
-                <p>Ojoja Local Government Area, Lagos, Nigeria</p>
-                <p>Phone: +234-123-4567</p>
             </div>
             <div id="right-footer">
                 WDD 231 Chamber Project Collins C. Okolie<br>
                 &copy; <span id="currentyear"></span> LynnTech Poultry Farm<br>
                 <span id="lastmodified"></span>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="contact.html#contact">Contact</a></li>
+                    <li><a href="contact.html#visit-factory">Visit Our Factory</a></li>
+                    <li><a href="contact.html#visit-farm">Visit Our Chicken Farm</a></li>
+                    <li><a href="contact.html#social-media">See Our Social Media</a></li>
+                </ul>
             </div>
             <div class="footer-divider"></div>
             <div class="social-media">

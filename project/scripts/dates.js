@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var path = window.location.pathname;
-    if (path.endsWith('index.html')) {
-        var homeLink = document.getElementById('home-link');
-        if (homeLink) {
-            homeLink.classList.add('active');
-        }
-    }
+  document.addEventListener('DOMContentLoaded', function() {
+        var path = window.location.pathname;
+        if (path.endsWith('product-services.html')) {
+            var productsLink = document.getElementById('products-link');
+            if (productsLink) {
+                productsLink.classList.add('active');
+            }
+            }
 
     let currentDate = new Date();
     let currentYear = currentDate.getFullYear();
@@ -24,3 +24,4 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburgerElement.classList.toggle('open');
     });
 });
+    

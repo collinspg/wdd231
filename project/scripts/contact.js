@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     var path = window.location.pathname;
-    if (path.endsWith('index.html')) {
-        var homeLink = document.getElementById('home-link');
-        if (homeLink) {
-            homeLink.classList.add('active');
+    if (path.endsWith('contact.html')) {
+        var contactLink = document.getElementById('contact-link');
+        if (contactLink) {
+            contactLink.classList.add('active');
         }
     }
 

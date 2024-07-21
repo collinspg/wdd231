@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header {
+    padding: 0.1rem 1rem;
+    background-color: black;
+    color: #fff;
+}
+
+header p {
+    margin-left: 140px;
+}
+
+header h1 {
+    margin-left: 90px;
+}
+
+header img {
+    margin-top: 30px;
+}
+
+#cityLogo {
+    float: left;
+    width: 70px;
+    padding: 0 2rem 1rem 1rem;
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 140px); /* Adjust height to account for header and footer */
+}
+
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.container a {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block; /* Ensure the link behaves like a block element */
+    max-width: 200px; /* Adjust this value as needed */
+    margin: 20px auto; /* Center horizontally and add space above/below */
+}
+
+.container a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+.rating-label {
+    display: inline-block;
+    padding: 0 1em;
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+
+.rating-label input {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#right-footer {
+    margin-top: 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    header p, header h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .rating-label {
+        display: block;
+        padding: 0.5em;
+    }
+
+    .container {
+        padding: 10px;
+        min-height: auto;
+    }
+}

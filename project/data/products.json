@@ -1,0 +1,132 @@
+{
+  "products": [
+      {
+          "id": 1,
+          "name": "Layer Chicken Cage",
+          "description": "Durable and efficient cages for layer chickens, designed to provide optimal space and comfort for egg production.",
+          "price": 120.00,
+          "image": "images/layer.jpeg"
+      },
+      {
+          "id": 2,
+          "name": "Modern Chicken Cage",
+          "description": "Innovative chicken cages with modern features to ensure the health and safety of your poultry.",
+          "price": 150.00,
+          "image": "images/modern-chicken-cage.jpg"
+      },
+      {
+          "id": 3,
+          "name": "Automatic Chicken Cage",
+          "description": "Fully automated chicken cages with feeding and cleaning systems to reduce labor and increase efficiency.",
+          "price": 200.00,
+          "image": "images/automatic-chicken-cage.jpg"
+      },
+      {
+          "id": 4,
+          "name": "Shed Chicken Cage",
+          "description": "Spacious shed-style chicken cages for larger flocks, providing ample room for movement and growth.",
+          "price": 180.00,
+          "image": "images/shed-chicken-cage.jpg"
+      },
+      {
+          "id": 5,
+          "name": "Chicken Legs",
+          "description": "Carefully processed chicken legs, perfect for grilling, baking, or frying, offering a flavorful and juicy experience.",
+          "price": 10.00,
+          "image": "images/chicken-legs.jpg"
+      },
+      {
+          "id": 6,
+          "name": "Chicken Wings",
+          "description": "Versatile and delicious chicken wings known for their rich flavor and crispy texture, ideal for appetizers or main courses.",
+          "price": 12.00,
+          "image": "images/chicken-wings.jpeg"
+      },
+      {
+          "id": 7,
+          "name": "Chicken Breasts",
+          "description": "Lean and protein-rich chicken breasts, perfect for grilling, baking, or stir-frying, delivering a tender and juicy texture.",
+          "price": 15.00,
+          "image": "images/chicken-breasts.jpeg"
+      },
+      {
+          "id": 8,
+          "name": "Whole Chicken",
+          "description": "Complete whole chicken, perfect for roasting or slow-cooking, providing rich, succulent meat for family meals.",
+          "price": 18.00,
+          "image": "images/whole-chicken.jpeg"
+      },
+      {
+          "id": 9,
+          "name": "Chicken Sausages",
+          "description": "Savory chicken sausages, perfect for grilling or adding to recipes, offering a flavorful and juicy experience.",
+          "price": 14.00,
+          "image": "images/chicken-sausages.jpeg"
+      },
+      {
+          "id": 10,
+          "name": "Chicken Thighs",
+          "description": "Tender and flavorful chicken thighs, ideal for baking, grilling, or slow-cooking, providing a satisfying meal.",
+          "price": 13.00,
+          "image": "images/chicken-thighs.jpeg"
+      },
+      {
+          "id": 11,
+          "name": "Chicken Drumsticks",
+          "description": "Juicy and flavorful chicken drumsticks, perfect for baking, frying, or grilling, offering a hearty meal.",
+          "price": 11.00,
+          "image": "images/chicken-drumsticks.jpeg"
+      }
+  ],
+  "services": [
+      {
+          "id": 1,
+          "name": "Poultry Farm Consultation",
+          "description": "Expert guidance on farm setup and management, including layout, cage selection, and feed management.",
+          "price": 500.00,
+          "image": "images/consulting.jpeg"
+      },
+      {
+          "id": 2,
+          "name": "Custom Cage Design",
+          "description": "Bespoke cage designs tailored to meet your specific poultry farm requirements and optimize operations.",
+          "price": 300.00,
+          "image": "images/custom-design.jpg"
+      },
+      {
+          "id": 3,
+          "name": "Poultry Health Management",
+          "description": "Comprehensive health monitoring and disease prevention strategies to maintain flock wellbeing.",
+          "price": 400.00,
+          "image": "images/poultry-health-management.jpeg"
+      },
+      {
+          "id": 4,
+          "name": "Poultry Feed Supply",
+          "description": "High-quality, balanced feed with reliable delivery to support the health and productivity of your flock.",
+          "price": 200.00,
+          "image": "images/feed-supply.jpeg"
+      },
+      {
+          "id": 5,
+          "name": "Poultry Farm Training",
+          "description": "Hands-on training covering farm management, biosecurity, nutrition, and breeding techniques.",
+          "price": 350.00,
+          "image": "images/workshop-training.jpeg"
+      },
+      {
+          "id": 6,
+          "name": "Farm Equipment Maintenance",
+          "description": "Regular maintenance and repairs for your farming equipment to ensure optimal performance and longevity.",
+          "price": 250.00,
+          "image": "images/poultry-farm-maintenance.jpeg"
+      },
+      {
+          "id": 7,
+          "name": "Biosecurity Audit",
+          "description": "Thorough assessment of your farm's biosecurity practices to identify risks and improve safety.",
+          "price": 450.00,
+          "image": "images/biosecurity.jpeg"
+      }
+  ]
+}

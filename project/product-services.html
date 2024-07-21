@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Collins Chibuike Okolie">
+    <meta name="description" content="Products and services offered by LynnTech Poultry Farm Nigeria Limited.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Products & Services - LynnTech Poultry Farm">
+    <meta property="og:url" content="https://collinspg.github.io/wdd231/project/products.html">
+    <meta property="og:image" content="https://github.com/collinspg/wdd231/blob/main/chamber/images/lynntech-hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/product-services.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/toggle.js" defer></script>
+    <script src="scripts/product-services.js" defer></script>
+    <title>Products & Services - LynnTech Poultry Farm</title>
+</head>
+<body>
+    <header>
+        <img src="images/lynntech-logo.png" id="cityLogo" alt="LynnTech Logo">
+        <h1>LynnTech</h1>
+        <p>Poultry Farm</p>
+        <nav id="animateme">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="product-services.html" id="products-link">Products & Services</a></li>
+                <li><a href="contact.html" id="contact-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="weather">
+            <h2>Current Weather at LynnTech Poultry Farm</h2>
+            <div id="weatherContainer"></div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Our Products</h2>
+            <div id="productGrid" class="grid"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div id="serviceGrid" class="grid"></div>
+        </section>
+         <!-- HTML for Modal -->
+         <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Detailed Products and Services</h2>
+                <ul id="fullproductServices">
+                    <!-- JavaScript will populate this list -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Trigger link for Modal -->
+        
+        <div class="link-container">
+            <a href="javascript:void(0);" id="fullproductServicesLink">View Full Products and Services</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="products">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="product-services.html#layer-chicken-cage">Layer Chicken Cage</a></li>
+                    <li><a href="product-services.html#modern-chicken-cage">Modern Chicken Cage</a></li>
+                    <li><a href="product-services.html#automatic-chicken-cage">Automatic Chicken Cage</a></li>
+                    <li><a href="product-services.html#shed-chicken-cage">Shed Chicken Cage</a></li>
+                </ul>
+            </div>
+            <div id="right-footer">
+                <p>WDD 231 Chamber Project Collins C. Okolie<br>
+                &copy; <span id="currentyear"></span> LynnTech Poultry Farm<br>
+                <span id="lastmodified"></span></p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="contact.html#contact">Contact</a></li>
+                    <li><a href="contact.html#visit-factory">Visit Our Factory</a></li>
+                    <li><a href="contact.html#visit-farm">Visit Our Chicken Farm</a></li>
+                    <li><a href="contact.html#social-media">See Our Social Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <a href="https://www.youtube.com">
+                        <img class="youtube" src="images/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://www.x.com">
+                        <img class="twitter" src="images/x.png" alt="X">
+                    </a>
+                    <a href="https://www.whatsapp.com">
+                        <img class="whatsapp" src="images/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img class="linkedin" src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img class="instagram" src="images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img class="facebook" src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.pinterest.com/">
+                        <img class="pinterest" src="images/pinterest.png" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
